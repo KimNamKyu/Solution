@@ -1,6 +1,0 @@
-{
-  "select":"http://192.168.3.113/api/Select",
-  "insert":"http://192.168.3.113/api/Insert",
-  "update":"http://192.168.3.113/api/Update",
-  "delete":"http://192.168.3.113/api/Delete"
-}
