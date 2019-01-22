@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAPI", "WebAPI\WebAPI.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApp", "WindowsFormsApp\WindowsFormsApp.csproj", "{C82434A9-54DE-4B22-877E-A2F78FDE3FD9}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup", "Setup\Setup.vdproj", "{8817AEEE-314E-46DD-83FB-D0DE5C210594}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,8 @@ Global
 		{C82434A9-54DE-4B22-877E-A2F78FDE3FD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C82434A9-54DE-4B22-877E-A2F78FDE3FD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C82434A9-54DE-4B22-877E-A2F78FDE3FD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8817AEEE-314E-46DD-83FB-D0DE5C210594}.Debug|Any CPU.ActiveCfg = Debug
+		{8817AEEE-314E-46DD-83FB-D0DE5C210594}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
