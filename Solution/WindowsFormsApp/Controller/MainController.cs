@@ -164,30 +164,10 @@ namespace WindowsFormsApp.Controller
             hashtable.Add("name", "textBox6");
             hashtable.Add("enabled", false);
             textBox6 = comm.getTextBox(hashtable, controller);
-
-
-            Information();
+            
             GetSelect();
         }
 
-        public void Information()
-        {
-            string path = "/public/APIInfo.json";
-            string result = new StreamReader(File.OpenRead(path)).ReadToEnd();
-
-            JObject jo = JsonConvert.DeserializeObject<JObject>(result);
-            Hashtable map = new Hashtable();
-            foreach (JProperty col in jo.Properties())
-            {
-                //Console.WriteLine("{0} : {1}", col.Name, col.Value);
-                map.Add(col.Name, col.Value);
-            }
-
-            SelectInfo = string.Format("{0}", map["select"]);
-            InsertInfo = string.Format("{0}", map["insert"]);
-            UpdateInfo = string.Format("{0}", map["update"]);
-            DeleteInfo = string.Format("{0}", map["delete"]);
-        }
 
         private void GetSelect()
         {
@@ -211,7 +191,7 @@ namespace WindowsFormsApp.Controller
             client.Headers.Add("user-agent", "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.2; .NET CLR 1.0.3705;)");
             client.Encoding = Encoding.UTF8;    //한글처리
 
-            string url = SelectInfo;
+            string url = "http://192.168.3.113/api/Select";
             Stream result = client.OpenRead(url);
 
             StreamReader sr = new StreamReader(result);
@@ -242,7 +222,7 @@ namespace WindowsFormsApp.Controller
 
             data.Add("nTitle", textBox2.Text);
             data.Add("nContents", textBox3.Text);
-            string url = InsertInfo;
+            string url = "http://192.168.3.113/api/Insert";
             string method = "POST";
 
             byte[] result = client.UploadValues(url, method, data);
@@ -267,7 +247,7 @@ namespace WindowsFormsApp.Controller
             data.Add("nTitle", textBox2.Text);
             data.Add("nContents", textBox3.Text);
 
-            string url = UpdateInfo;
+            string url = "http://192.168.3.113/api/Update";
             string method = "POST";
             byte[] result = client.UploadValues(url, method, data);
             string strResult = Encoding.UTF8.GetString(result);
@@ -289,7 +269,7 @@ namespace WindowsFormsApp.Controller
 
             data.Add("nNo", textBox1.Text);
 
-            string url = DeleteInfo;
+            string url = "http://192.168.3.113/api/Delete";
             string method = "POST";
             byte[] result = client.UploadValues(url, method, data);
             string strResult = Encoding.UTF8.GetString(result);
