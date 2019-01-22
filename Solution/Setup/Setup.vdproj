@@ -15,19 +15,19 @@
     {
         "Entry"
         {
-        "MsmKey" = "8:_0620528B7680431E899DE055EAD0800B"
+        "MsmKey" = "8:_4AC41B55F9E64BCD9A323ACEF6823501"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_4CA22445FB94C6A31F6086F32E43CA76"
-        "OwnerKey" = "8:_0620528B7680431E899DE055EAD0800B"
+        "OwnerKey" = "8:_F5C5A76FEC0B4FB3B205691A41C8DAF4"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_FCD07C1D26E74D98A5775FC2B8C01EC6"
+        "MsmKey" = "8:_F5C5A76FEC0B4FB3B205691A41C8DAF4"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -40,7 +40,7 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_0620528B7680431E899DE055EAD0800B"
+        "OwnerKey" = "8:_F5C5A76FEC0B4FB3B205691A41C8DAF4"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -61,6 +61,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
         "Release"
         {
@@ -77,6 +85,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
     }
     "Deployable"
@@ -106,21 +122,10 @@
         }
         "File"
         {
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_0620528B7680431E899DE055EAD0800B"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_4AC41B55F9E64BCD9A323ACEF6823501"
             {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:WindowsFormsApp, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                    "_0620528B7680431E899DE055EAD0800B"
-                    {
-                    "Name" = "8:WindowsFormsApp.exe"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:..\\WindowsFormsApp\\bin\\Debug\\WindowsFormsApp.exe"
-            "TargetName" = "8:"
+            "SourcePath" = "8:..\\WindowsFormsApp\\bin\\Debug\\WindowsFormsApp.exe.config"
+            "TargetName" = "8:WindowsFormsApp.exe.config"
             "Tag" = "8:"
             "Folder" = "8:_B942B234BA884D34ABD0C66A3AB71618"
             "Condition" = "8:"
@@ -168,10 +173,21 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_FCD07C1D26E74D98A5775FC2B8C01EC6"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_F5C5A76FEC0B4FB3B205691A41C8DAF4"
             {
-            "SourcePath" = "8:..\\WindowsFormsApp\\bin\\Debug\\WindowsFormsApp.exe.config"
-            "TargetName" = "8:WindowsFormsApp.exe.config"
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:WindowsFormsApp, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_F5C5A76FEC0B4FB3B205691A41C8DAF4"
+                    {
+                    "Name" = "8:WindowsFormsApp.exe"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:..\\WindowsFormsApp\\bin\\Debug\\WindowsFormsApp.exe"
+            "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_B942B234BA884D34ABD0C66A3AB71618"
             "Condition" = "8:"
@@ -365,15 +381,15 @@
         }
         "Shortcut"
         {
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_73A416812C8A44D0AFEAA14BCF721793"
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_5CE2AC7AAE954C679CF537060E58D015"
             {
-            "Name" = "8:화면제공프로그램.exe"
+            "Name" = "8:화면제공 윈폼.exe"
             "Arguments" = "8:"
             "Description" = "8:"
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
-            "Target" = "8:_0620528B7680431E899DE055EAD0800B"
+            "Target" = "8:_F5C5A76FEC0B4FB3B205691A41C8DAF4"
             "Folder" = "8:_FA39C1FDEF5947539B5690988840F286"
             "WorkingFolder" = "8:_B942B234BA884D34ABD0C66A3AB71618"
             "Icon" = "8:"
